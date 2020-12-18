@@ -99,7 +99,7 @@ function Add-FirewallException
     netsh advfirewall firewall add rule name="Windows Remote Management (HTTPS-In)" dir=in action=allow protocol=TCP localport=$port
 	
 	# Add a new firewall rule
-    netsh advfirewall firewall add rule name="SAG Ports" dir=in action=allow protocol=TCP localport="8092,8093,5555,9999"
+    netsh advfirewall firewall add rule name="SAG Ports" dir=in action=allow protocol=TCP localport="8092,8093,5555,9999,22"
 }
 
 
